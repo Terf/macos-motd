@@ -1,7 +1,7 @@
 #!/bin/bash
 
 usage=`ps -A -o %cpu | awk '{s+=$1} END {print s}'`
-pct=`bc -l <<< "${usage}/100"`
+pct=`bc -l <<< "${usage}/200"`
 echo "CPU usage: ${usage}%"
 
 bar="====================================================================="
