@@ -1,10 +1,13 @@
 #!/bin/bash
 
 user=`whoami`
-printf "Welcome, ${user}. It's currently "
-date
+date=`date`
+printf "Welcome, ${user}. It's currently ${date}"
 /Users/tim/myrepos/macos-motd/services.sh
 /Users/tim/myrepos/macos-motd/cpu.sh
-echo "System:"
-system_profiler SPSoftwareDataType | tail -n10 | cut -c 5-
+/Users/tim/myrepos/macos-motd/colors.sh
+cat /Users/tim/myrepos/macos-motd/apple.txt | lolcat
+#echo "System:"
+# system_profiler SPSoftwareDataType | tail -n10 | cut -c 5- | lolcat
+echo
 

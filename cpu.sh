@@ -5,7 +5,7 @@ pct=`bc -l <<< "${usage}/400"` # 400 because 4 cores on my machine
 printf "CPU usage: "
 printf %.2f `echo "${pct}*100" | bc -l`
 echo "%"
-bar="==============================================="
+bar="================================================="
 # red='\033[0;31m'
 red='\e[33m'
 nc='\033[0m'

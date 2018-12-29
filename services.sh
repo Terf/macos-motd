@@ -4,8 +4,9 @@
 declare -a services=(
 "com.apple.Safari"
 "com.google.Chrome"
-"Spotify"
+"spotify"
 "com.docker"
+"slack"
 )
 
 declare -a serviceNames=(
@@ -13,6 +14,7 @@ declare -a serviceNames=(
 "Chrome"
 "Spotify"
 "Docker"
+"Slack"
 )
 
 declare -a serviceStatus=()
@@ -30,7 +32,7 @@ done
 
 # Maximum column width
 #width=$((49-2))
-width=90
+width=70
 
 # Current line and line length
 line="  "
